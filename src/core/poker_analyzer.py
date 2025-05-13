@@ -38,15 +38,56 @@ def paste_to_poker(text):
         log_message(f"Error al pegar texto: {e}", level='error')
         return False
 
-def format_stats_summary(data):
-    """Formatea las estadísticas principales en formato corto"""
+def format_stats_summary(data, config):
+    """Formatea las estadísticas principales en formato corto según la selección del usuario"""
     try:
-        return (f"VPIP:{int(float(data['vpip']))} PFR:{int(float(data['pfr']))} "
-                f"3B:{int(float(data['three_bet']))} F3B:{int(float(data['fold_to_3bet_pct']))} "
-                f"WTSD:{int(float(data['wtsd']))} WSD:{int(float(data['wsd']))} "
-                f"CB:{int(float(data['cbet_flop']))}/{int(float(data['cbet_turn']))}")
+        # Obtener estadísticas seleccionadas y su orden
+        selected_stats = config.get("stats_seleccionadas", {})
+        stats_order = config.get("stats_order", list(selected_stats.keys()))
+        stats_format = config.get("stats_format", {})
+        
+        # Filtrar el orden para incluir solo las estadísticas seleccionadas
+        filtered_order = [stat for stat in stats_order if selected_stats.get(stat, False)]
+        
+        # Si no hay estadísticas seleccionadas, usar algunas por defecto
+        if not filtered_order:
+            default_stats = ["vpip", "pfr", "three_bet", "fold_to_3bet_pct", "wtsd", "wsd", "cbet_flop", "cbet_turn"]
+            filtered_order = [stat for stat in default_stats if stat in data]
+        
+        # Formatear estadísticas seleccionadas en el orden especificado
+        stats_parts = []
+        for stat_key in filtered_order:
+            if stat_key in data:
+                # Obtener el formato para esta estadística
+                format_str = stats_format.get(stat_key, f"{stat_key.upper()}:{{value}}")
+                
+                try:
+                    # Intentar formatear como entero para la mayoría de estadísticas porcentuales
+                    if stat_key in ['bb_100', 'win_usd']:
+                        value = float(data[stat_key])
+                        formatted_value = format_str.format(value=value)
+                    else:
+                        value = int(float(data[stat_key]))
+                        formatted_value = format_str.format(value=value)
+                    
+                    stats_parts.append(formatted_value)
+                except (ValueError, TypeError):
+                    # Si no se puede convertir, mostrar como está
+                    formatted_value = format_str.format(value=data[stat_key])
+                    stats_parts.append(formatted_value)
+        
+        # Si no se pudo formatear ninguna estadística, usar formato antiguo
+        if not stats_parts:
+            return (f"VPIP:{int(float(data['vpip']))} PFR:{int(float(data['pfr']))} "
+                    f"3B:{int(float(data['three_bet']))} F3B:{int(float(data['fold_to_3bet_pct']))} "
+                    f"WTSD:{int(float(data['wtsd']))} WSD:{int(float(data['wsd']))} "
+                    f"CB:{int(float(data['cbet_flop']))}/{int(float(data['cbet_turn']))}")
+        
+        return " ".join(stats_parts)
     except Exception as e:
         log_message(f"Error al formatear stats: {e}", level='error')
+        import traceback
+        log_message(traceback.format_exc(), level='error')
         return "Error al formatear stats"
 
 def analyze_table(hwnd, config, manual_nick=None, force_new_capture=False):
@@ -130,25 +171,29 @@ def analyze_table(hwnd, config, manual_nick=None, force_new_capture=False):
             stats_data["player_name"] = nick
             
             # 3. Formatear estadísticas y generar análisis
-            stats_summary = format_stats_summary(stats_data)
+            stats_summary = format_stats_summary(stats_data, config)
             analysis = analyze_stats(stats_data, config["openai_api_key"], nick)
             
             log_message(f"Stats: {stats_summary}")
             log_message(f"Análisis: {analysis[:100]}...")  # Primeros 100 caracteres
             
-            # 4. Preparar resultado final
-            result = ""
-            if config["mostrar_stats"]:
-                result += f"{stats_summary}\n"
-            if config["mostrar_analisis"]:
-                result += f"{analysis}"
+            # Verificar si se debe mostrar el diálogo de copia
+            show_copy_dialog = config.get("mostrar_dialogo_copia", False)
             
-            if not result:
-                log_message("No hay contenido para mostrar según la configuración")
-                return False
-            
-            # 5. Pegar resultado en la mesa
-            success = paste_to_poker(result)
+            if show_copy_dialog:
+                # Programar la ventana de diálogo en el hilo principal
+                from src.ui.main_window import root
+                if root and root.winfo_exists():
+                    # Usar el evento after para ejecutar en el hilo de Tkinter
+                    root.after(100, lambda: show_copy_options_dialog(root, stats_summary, analysis, hwnd, config))
+                    log_message("Diálogo de copia programado")
+                else:
+                    log_message("No se pudo mostrar diálogo de copia (root no disponible)", level='warning')
+                    # Continuar con la operación normal
+                    paste_results(stats_summary, analysis, hwnd, config)
+            else:
+                # Operación normal: pegar resultados en la mesa
+                paste_results(stats_summary, analysis, hwnd, config)
             
             # 6. Guardar en historial
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -193,3 +238,140 @@ def analyze_table(hwnd, config, manual_nick=None, force_new_capture=False):
         import traceback
         log_message(traceback.format_exc(), level='error')
         return False
+
+def paste_results(stats_summary, analysis, hwnd, config):
+    """Pega los resultados en la ventana de poker según la configuración"""
+    # Preparar resultado final
+    result = ""
+    if config["mostrar_stats"]:
+        result += f"{stats_summary}\n"
+    if config["mostrar_analisis"]:
+        result += f"{analysis}"
+    
+    if not result:
+        log_message("No hay contenido para mostrar según la configuración")
+        return False
+    
+    # Pegar resultado en la mesa
+    return paste_to_poker(result)
+
+def show_copy_options_dialog(parent_window, stats, analysis, hwnd, config):
+    """Muestra un diálogo con opciones para copiar stats o análisis"""
+    try:
+        import tkinter as tk
+        from tkinter import ttk
+        
+        dialog = tk.Toplevel(parent_window)
+        dialog.title("Opciones de Copia")
+        dialog.geometry("300x200")
+        dialog.minsize(300, 200)
+        dialog.transient(parent_window)
+        dialog.grab_set()
+        
+        # Frame principal
+        frame = ttk.Frame(dialog, padding=10)
+        frame.pack(fill="both", expand=True)
+        
+        ttk.Label(frame, text="¿Qué quieres hacer con el resultado?", 
+                 font=("Arial", 10, "bold")).pack(pady=5)
+        
+        # Funciones para acciones
+        def copy_stats():
+            import pyperclip
+            pyperclip.copy(stats)
+            log_message("Stats copiadas al portapapeles")
+            dialog.destroy()
+        
+        def copy_analysis():
+            import pyperclip
+            pyperclip.copy(analysis)
+            log_message("Análisis copiado al portapapeles")
+            dialog.destroy()
+        
+        def copy_both():
+            import pyperclip
+            pyperclip.copy(f"{stats}\n{analysis}")
+            log_message("Stats y análisis copiados al portapapeles")
+            dialog.destroy()
+        
+        def paste_to_window():
+            dialog.destroy()
+            # Pegar el contenido según configuración
+            paste_results(stats, analysis, hwnd, config)
+        
+        def do_nothing():
+            dialog.destroy()
+        
+        # Botones de acción
+        ttk.Button(frame, text="Copiar Stats", command=copy_stats).pack(fill="x", pady=2)
+        ttk.Button(frame, text="Copiar Análisis", command=copy_analysis).pack(fill="x", pady=2)
+        ttk.Button(frame, text="Copiar Ambos", command=copy_both).pack(fill="x", pady=2)
+        ttk.Button(frame, text="Pegar en Mesa", command=paste_to_window).pack(fill="x", pady=2)
+        ttk.Button(frame, text="Cancelar", command=do_nothing).pack(fill="x", pady=2)
+        
+        # Centrar ventana
+        dialog.update_idletasks()
+        width = dialog.winfo_width()
+        height = dialog.winfo_height()
+        x = (dialog.winfo_screenwidth() // 2) - (width // 2)
+        y = (dialog.winfo_screenheight() // 2) - (height // 2)
+        dialog.geometry(f"{width}x{height}+{x}+{y}")
+        
+        # Intentar añadir ícono
+        try:
+            dialog.iconbitmap("assets/icon.ico")
+        except:
+            pass
+            
+    except Exception as e:
+        log_message(f"Error al mostrar diálogo de copia: {e}", level='error')
+        import traceback
+        log_message(traceback.format_exc(), level='error')
+        
+        # Si hay error en el diálogo, simplemente realizar acción predeterminada
+        paste_results(stats, analysis, hwnd, config)
+
+def get_last_analysis_results():
+    """Obtiene los resultados del último análisis realizado"""
+    history = load_history()
+    if not history:
+        return None, None
+    
+    last_entry = history[-1]
+    stats = last_entry.get("stats", "")
+    analysis = last_entry.get("analisis", "")
+    return stats, analysis
+
+def copy_last_stats_to_clipboard():
+    """Copia las estadísticas del último análisis al portapapeles"""
+    stats, _ = get_last_analysis_results()
+    if stats:
+        pyperclip.copy(stats)
+        log_message("Últimas estadísticas copiadas al portapapeles")
+        return True
+    return False
+
+def copy_last_analysis_to_clipboard():
+    """Copia el análisis del último análisis al portapapeles"""
+    _, analysis = get_last_analysis_results()
+    if analysis:
+        pyperclip.copy(analysis)
+        log_message("Último análisis copiado al portapapeles")
+        return True
+    return False
+
+def copy_last_results_to_clipboard():
+    """Copia ambos resultados del último análisis al portapapeles"""
+    stats, analysis = get_last_analysis_results()
+    if stats or analysis:
+        combined = ""
+        if stats:
+            combined += stats + "\n"
+        if analysis:
+            combined += analysis
+        
+        if combined:
+            pyperclip.copy(combined)
+            log_message("Últimos resultados copiados al portapapeles")
+            return True
+    return False

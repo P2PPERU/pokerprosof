@@ -47,5 +47,110 @@
         "stats": "VPIP:32 PFR:24 3B:6 F3B:75 WTSD:25 WSD:42 CB:54/88",
         "analisis": "🎯 Informe sobre Nigiri:\n\n1️⃣ Estilo de juego: \nJugador pasivo-agresivo, tiende a pagar mucho preflop pero luego se muestra agresivo en el turn y river.\n\n2️⃣ Errores explotables:\n- Paga mucho preflop y después se frena en turn.\n- C-Betea mucho flop pero fold al turn es muy bajo.\n- WTSD alto pero WSD bajo, paga mucho pero gana poco.\n\n3️⃣ Cómo explotarlo:\n- Aprovechar su pasividad preflop con 3-bets light y c-bets agresivos.\n- Flotar más sus c-bets en flop y aplicar presión en turn.\n- Ajustar tamaño de apuestas en turn y river para explotar su tendencia a pagar.",
         "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:19:26",
+        "nick": "XP1648270",
+        "stats": "VPIP:15 PFR:12 3B:4 F3B:55 WTSD:17 WSD:55 CB:80/53",
+        "analisis": "🎯 Informe sobre XP1648270:\n\n1️⃣ Estilo de juego: \nJugador TAG con tendencia a ser pasivo postflop.\n\n2️⃣ Errores explotables:\n- C-Bet flop alto pero se frena en turn.\n- Fold to 3-Bet por debajo del promedio.\n- Fold to Turn C-Bet del 100%.\n\n3️ Cómo explotarlo:\n- Aumentar valor con manos fuertes postflop.\n- 3Betear más light ante su debilidad.\n- Continuar barrelando turn con frecuencia.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:30:45",
+        "nick": "Zzzzzzzz",
+        "stats": "VPIP:23 PFR:17 3B:14 F3B:0 WTSD:20 WSD:33 CB:71/100",
+        "analisis": "🎯 Informe sobre Zzzzzzzz:\n\n1️⃣ Estilo de juego: \nPasivo preflop, agresivo postflop con tendencia a pagar demasiado. \n\n2️⃃ Errores explotables:\n- Fold to 3-Bet: 0.00%\n- Fold to Flop C-Bet: 66.67%\n- Fold to River Bet: 100.00%\n\n3️⃃ Cómo explotarlo:\nAprovecha su debilidad contra 3-Bets, aumenta tus bluffs en flops y apuesta fuerte en el river para sacar valor de tus manos fuertes.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:30:53",
+        "nick": "Zzzzzzzz",
+        "stats": "VPIP:23 PFR:17 3B:14 F3B:0 WTSD:20 WSD:33 CB:71/100",
+        "analisis": "🎯 Informe sobre Zzzzzzzz:\n\n1️⃣ Estilo de juego: \nJugador pasivo preflop, agresivo en el flop y el river, pero se frena en el turn.\n\n2️⃣ Errores explotables:\n- No defiende lo suficiente contra el 3-bet.\n- Paga demasiado en el river.\n- Falta de agresión en el turn.\n\n3️⃣ Cómo explotarlo:\n- Aumenta tu frecuencia de 3-bet contra él.\n- Aprovecha su tendencia a pagar en el river con tus value bets.\n- Aumenta la presión en el turn cuando se frena.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:30:57",
+        "nick": "Disasters",
+        "stats": "VPIP:43 PFR:23 3B:8 F3B:15 WTSD:28 WSD:26 CB:64/46",
+        "analisis": "🎯 Informe sobre Disasters:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop a medias.\n\n2️⃣ Errores explotables:\n- VPIP alto + PFR bajo = pasivo preflop.\n- C-Bet flop alta + Turn baja = agresión inconsistente.\n- WTSD alto + WSD bajo = paga mucho, gana poco.\n\n3️⃣ Cómo explotarlo:\n- Aprovecha su pasividad preflop con 3-Bets más amplios.\n- Flota sus C-Bets con más manos especulativas.\n- Aumenta la presión postflop para forzar errores en calldowns. \n\nNota: El sample es bajo, ajustes preliminares.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:31:22",
+        "nick": "V",
+        "stats": "VPIP:35 PFR:20 3B:8 F3B:50 WTSD:31 WSD:50 CB:60/42",
+        "analisis": "---\n\n🎯 Informe sobre V:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop. Se frena en turn.\n\n2️⃣ Errores explotables:\n- PFR bajo en relación al VPIP.\n- Fold to 3-Bet alto, pero 4-Bet bajo.\n- C-Bet flop alta, pero baja en turn.\n\n3️⃣ Cómo explotarlo:\n- Aprovechar su pasividad preflop con más 3-Bets.\n- Flotar más flops secos o con draws.\n- Doblar barriles en turn cuando se frena.\n\n---",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:31:48",
+        "nick": "checkallin53",
+        "stats": "VPIP:14 PFR:13 3B:5 F3B:66 WTSD:22 WSD:25 CB:71/33",
+        "analisis": "🎯 Informe sobre checkallin53:\n\n1️⃣ Estilo de juego: \nJugador pasivo con cierta agresión en el flop, pero se frena en el turn y river.\n\n2️⃣ Errores explotables:\n- Fold to 3-Bet alto indica que paga demasiado con manos débiles.\n- C-Bet flop alta pero baja en el turn sugiere agresión selectiva.\n- WSD bajo muestra que paga mucho y no gana suficiente.\n\n3️⃣ Cómo explotarlo:\nAprovecha su tendencia a pagar con manos débiles 3beteando más. Flota flop seco para aprovechar su agresión selectiva. Aumenta la presión en el turn para forzar errores de pago.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:32:08",
+        "nick": "2",
+        "stats": "VPIP:27 PFR:14 3B:6 F3B:45 WTSD:24 WSD:50 CB:62/56",
+        "analisis": "🎯 Informe sobre jugador X:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop.\n\n2️⃣ Errores explotables:\n- Rango de 3-Bet muy bajo.\n- Fold al 3-Bet por debajo de lo esperado.\n- Fold al flop C-Bet cercano al 50%.\n\n3️ Cómo explotarlo:\n- Aumentar frecuencia de 3-Bet en posiciones finales.\n- C-Bet más amplio en flops favorables.\n- Aprovechar su debilidad ante agresión preflop y postflop.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:32:09",
+        "nick": "2",
+        "stats": "VPIP:27 PFR:14 3B:6 F3B:45 WTSD:24 WSD:50 CB:62/56",
+        "analisis": "🎯 Informe sobre \"2\":\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop. Muestra falta de equilibrio en su rango de apertura.\n\n2️⃣ Errores explotables:\n- Juega demasiado pasivo preflop con un VPIP alto.\n- Fold al 3-Bet por debajo del promedio, pero fold al 4-Bet alto.\n- Muestra debilidad en su juego de calle postflop con altas frecuencias de fold a apuestas.\n\n3️⃣ Cómo explotarlo:\n- Aprovecha su pasividad preflop con 3-Bets light en posiciones finales.\n- Aumenta la presión con 3-Bets y bluffs en spots donde suele foldear postflop.\n- Aprovecha su debilidad postflop con c-bets en boards secos y continuando la presión en calles posteriores.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:33:29",
+        "nick": "Sai Suthida",
+        "stats": "VPIP:47 PFR:14 3B:4 F3B:30 WTSD:30 WSD:42 CB:60/46",
+        "analisis": "🎯 Informe sobre Sai Suthida:\n\n1️⃣ Estilo de juego: \nJugador muy pasivo con VPIP alto y PFR bajo, tiende a jugar muchas manos pero es poco agresivo postflop.\n\n2️⃣ Errores explotables:\n- Pasividad en las calles posteriores al flop.\n- Fold to 3-Bet bajo, pero fold to 4-Bet alto.\n- Baja agresión en el river y poca capacidad de bluff.\n\n3️⃣ Cómo explotarlo:\n- Aumenta la presión con 3-Bets y C-Bets, especialmente en boards secos.\n- Ten cuidado con sus 4-Bets, haz 4-Bets light para explotar su fold to 4-Bet alto.\n- Aprovecha su tendencia a pagar en el river con manos medias, valora tus manos fuertes.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:57:27",
+        "nick": "Sai Suthida",
+        "stats": "VPIP:47 PFR:14 3B:4 F3B:30 WTSD:30 WSD:42 CF:60 CT:46 FFC:37",
+        "analisis": "🎯 Informe sobre Sai Suthida:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop.\n\n2️⃣ Errores explotables:\n- VPIP alto + PFR bajo = demasiado pasivo preflop.\n- Fold to 3-Bet bajo = paga de más.\n- WTSD alto + WSD bajo = paga mucho, gana poco.\n\n3️⃣ Cómo explotarlo:\n- Aumenta 3-Bets en posición.\n- Flota más flops secos.\n- Aprovecha su tendencia a pagar con manos débiles. \n\nSample de manos bajo, los reads son preliminares.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:58:12",
+        "nick": "checkallin53",
+        "stats": "VPIP:14 PFR:13 3B:5 F3B:66 WTSD:22 WSD:25 CF:71 CT:33 FFC:100",
+        "analisis": "🎯 Informe sobre checkallin53:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop selectivo.\n\n2️⃣ Errores explotables:\n- Fold al 3-Bet alto, solo 66.67%\n- C-Bet flop alto, pero se frena en turn, solo 33.33%\n- WTSD alto, pero WSD bajo, paga mucho pero gana poco.\n\n3️⃣ Cómo explotarlo:\n- Aumenta el rango de 3-Bet para aprovechar su fold al 3-Bet.\n- Aumenta la agresión en turn para explotar su falta de continuidad.\n- Considera bluffing más en river al ver su fold al river bet del 50%. \n\nSample de manos bajo, ajustes preliminares.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 18:59:25",
+        "nick": "Disasters",
+        "stats": "VPIP:43 PFR:23 3B:8 F3B:15 WTSD:28 WSD:26 CF:64 CT:46 FFC:43",
+        "analisis": "🎯 Informe sobre Disasters:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop pero inconsistente.\n\n2️⃣ Errores explotables:\n- Gap extremo entre VPIP y PFR.\n- Fold to 3-Bet bajo.\n- Baja WSD y WSDwBR.\n\n3️⃣ Cómo explotarlo:\n- Aprovechar su pasividad preflop con 3-bets y aislamientos.\n- Presionar sus rangos de call y fold con 3-bets.\n- Aumentar la presión en el flop y turn para explotar su baja capacidad de llegar al showdown con manos fuertes.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 19:02:03",
+        "nick": "Disasters",
+        "stats": "VPIP:43 PFR:23 3BET:8 F3BET:15 WTSD:28 WSD:26 CBET_FLOP:64 CBET_TURN:46 FOLD_TO_FLOP_CBET_PCT:43",
+        "analisis": "🎯 Informe sobre Disasters:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop.\n\n2️⃣ Errores explotables:\n- VPIP alto + PFR bajo = pasivo preflop.\n- Fold to 3-Bet bajo = paga mucho.\n- WSD bajo + WTSD alto = paga mucho, gana poco.\n\n3️⃣ Cómo explotarlo:\n- Aprovecha sus calls con manos marginales.\n- 3-Betea más en posiciones late.\n- Aumenta presión en flops y turns.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 19:02:43",
+        "nick": "Disasters",
+        "stats": "VPIP:43 PFR:23 3BET:8 F3BET:15 WTSD:28 WSD:26 CBET_FLOP:64 CBET_TURN:46 FOLD_TO_FLOP_CBET_PCT:43",
+        "analisis": "🎯 Informe sobre Disasters:\n\n1️⃣ Estilo de juego: Pasivo preflop, agresivo en flop, se frena en turn.\n\n2️⃣ Errores explotables:\n- PFR bajo en relación al VPIP.\n- Fold to 3-Bet bajo.\n- WSD muy bajo en comparación con WTSD.\n\n3️⃣ Cómo explotarlo:\n- Aumenta el 3-Bet en posiciones agresivas.\n- Aprovecha su tendencia a pagar demasiado con manos débiles.\n- Presiona en turn y river cuando no llega al showdown con fuerza.",
+        "sala": "XPK"
+    },
+    {
+        "timestamp": "2025-05-12 19:46:31",
+        "nick": "RE",
+        "stats": "VPIP:20 PFR:8 3BET:3 F3BET:59 WTSD:28 WSD:56 CBET_FLOP:56 CBET_TURN:40 FOLD_TO_FLOP_CBET_PCT:43",
+        "analisis": "🎯 Informe sobre RE:\n\n1️⃣ Estilo de juego: Pasivo preflop con agresión inconsistente postflop.\n\n2️⃣ Errores explotables:\n- PFR bajo indica falta de agresión preflop.\n- Fold to 3-Bet alto, puede explotarse con 3B light.\n- Fold to river bet alto, muestra debilidad en el river.\n\n3️⃣ Cómo explotarlo:\n- Aumenta agresión preflop, especialmente en posiciones tardías.\n- Aprovecha su tendencia a foldear a 3-Bets con manos más amplias.\n- Aumenta la presión en el river, ya que tiende a foldear con frecuencia.",
+        "sala": "XPK"
     }
 ]

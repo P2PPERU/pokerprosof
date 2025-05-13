@@ -4,7 +4,7 @@ import threading
 
 from src.utils.logger import log_message
 from src.utils.windows import get_window_under_cursor, find_poker_tables
-from src.core.poker_analyzer import analyze_table
+from src.core.poker_analyzer import analyze_table, copy_last_stats_to_clipboard, copy_last_analysis_to_clipboard, copy_last_results_to_clipboard
 
 def create_main_tab(parent, config):
     """Crea la pestaña principal de la aplicación"""
@@ -13,6 +13,9 @@ def create_main_tab(parent, config):
     
     # Marco para búsqueda manual
     create_search_frame(tab, config)
+    
+    # Marco para acciones rápidas (NUEVO)
+    create_quick_actions_frame(tab, config)
     
     # Marco para opciones de salida
     create_output_options_frame(tab, config)
@@ -39,7 +42,7 @@ def create_search_frame(parent, config):
     # Selector de sala
     sala_var = tk.StringVar(value=config["sala_default"])
     ttk.Label(frame, text="Sala:").grid(row=0, column=2, padx=5, pady=5)
-    combo_sala = ttk.Combobox(frame, textvariable=sala_var, values=["XPK", "PS", "GG", "WPN", "888"])
+    combo_sala = ttk.Combobox(frame, textvariable=sala_var, values=["XPK", "PS", "GG", "WPN", "888"], width=5)
     combo_sala.grid(row=0, column=3, padx=5, pady=5)
     
     # Botón de búsqueda
@@ -70,6 +73,58 @@ def create_search_frame(parent, config):
     
     ttk.Button(frame, text="Buscar", command=search_manual).grid(row=0, column=4, padx=5, pady=5)
     
+    # Hacer que el Enter en el campo de búsqueda active la búsqueda
+    entry_nick.bind("<Return>", lambda event: search_manual())
+    
+    return frame
+
+def create_quick_actions_frame(parent, config):
+    """Crea el marco para acciones rápidas (NUEVO)"""
+    frame = ttk.LabelFrame(parent, text="Acciones Rápidas", padding=10)
+    frame.pack(fill="x", padx=10, pady=5)
+    frame.name = "quick_actions_frame"
+    
+    # Botones para copiar última búsqueda
+    def copy_last_stats():
+        """Copia al portapapeles las estadísticas de la última búsqueda"""
+        if copy_last_stats_to_clipboard():
+            messagebox.showinfo("Copiado", "Estadísticas copiadas al portapapeles")
+        else:
+            messagebox.showinfo("Sin datos", "No hay búsquedas previas")
+
+    def copy_last_analysis():
+        """Copia al portapapeles el análisis de la última búsqueda"""
+        if copy_last_analysis_to_clipboard():
+            messagebox.showinfo("Copiado", "Análisis copiado al portapapeles")
+        else:
+            messagebox.showinfo("Sin datos", "No hay análisis previo disponible")
+
+    def copy_both():
+        """Copia al portapapeles las estadísticas y el análisis de la última búsqueda"""
+        if copy_last_results_to_clipboard():
+            messagebox.showinfo("Copiado", "Estadísticas y análisis copiados al portapapeles")
+        else:
+            messagebox.showinfo("Sin datos", "No hay búsquedas previas")
+    
+    # Botón para seleccionar estadísticas a mostrar
+    def open_stats_selector():
+        try:
+            from src.ui.dialogs.stats_selector_dialog import show_stats_selector_dialog
+            show_stats_selector_dialog(parent, config)
+        except Exception as e:
+            log_message(f"Error al abrir selector de estadísticas: {e}", level='error')
+            messagebox.showerror("Error", f"No se pudo abrir el selector de estadísticas: {e}")
+    
+    # Opciones para la última búsqueda
+    ttk.Label(frame, text="Última búsqueda:").grid(row=0, column=0, sticky="w", padx=5, pady=5)
+    ttk.Button(frame, text="Copiar Stats", command=copy_last_stats, width=12).grid(row=0, column=1, padx=5, pady=5)
+    ttk.Button(frame, text="Copiar Análisis", command=copy_last_analysis, width=12).grid(row=0, column=2, padx=5, pady=5)
+    ttk.Button(frame, text="Copiar Ambos", command=copy_both, width=12).grid(row=0, column=3, padx=5, pady=5)
+    
+    # Opciones de configuración rápida
+    ttk.Label(frame, text="Configuración:").grid(row=1, column=0, sticky="w", padx=5, pady=5)
+    ttk.Button(frame, text="Seleccionar Stats", command=open_stats_selector, width=16).grid(row=1, column=1, padx=5, pady=5, columnspan=2)
+    
     return frame
 
 def create_output_options_frame(parent, config):
@@ -99,6 +154,17 @@ def create_output_options_frame(parent, config):
     
     check_analisis = ttk.Checkbutton(frame, text="Análisis", variable=mostrar_analisis_var, command=toggle_analisis)
     check_analisis.grid(row=0, column=2, padx=5, pady=5)
+    
+    # Opción de mostrar diálogo de copia
+    mostrar_dialogo_var = tk.BooleanVar(value=config.get("mostrar_dialogo_copia", False))
+    
+    def toggle_dialogo():
+        config["mostrar_dialogo_copia"] = mostrar_dialogo_var.get()
+        from src.config.settings import save_config
+        save_config(config)
+    
+    check_dialogo = ttk.Checkbutton(frame, text="Mostrar diálogo de copia", variable=mostrar_dialogo_var, command=toggle_dialogo)
+    check_dialogo.grid(row=0, column=3, padx=5, pady=5)
     
     return frame
 
@@ -140,6 +206,11 @@ def create_tables_frame(parent, config):
     tree.column("titulo", width=400)
     tree.pack(fill="both", expand=True, padx=5, pady=5)
     
+    # Añadir scrollbar
+    scrollbar = ttk.Scrollbar(tree, orient="vertical", command=tree.yview)
+    tree.configure(yscrollcommand=scrollbar.set)
+    scrollbar.pack(side="right", fill="y")
+    
     # Botón para refrescar mesas
     def refresh_tables():
         # Limpiar treeview
@@ -155,8 +226,13 @@ def create_tables_frame(parent, config):
         
         if not tables:
             log_message("No se encontraron mesas de poker activas", level="warning")
+            tree.insert("", "end", values=("", "No se encontraron mesas de poker activas"))
     
-    ttk.Button(frame, text="Refrescar Mesas", command=refresh_tables).pack(padx=5, pady=5)
+    # Frame para botones
+    button_frame = ttk.Frame(frame)
+    button_frame.pack(fill="x", padx=5, pady=5)
+    
+    ttk.Button(button_frame, text="Refrescar Mesas", command=refresh_tables).pack(side="left", padx=5, pady=5)
     
     # Botón para analizar mesa seleccionada
     def analyze_selected_table():
@@ -166,10 +242,14 @@ def create_tables_frame(parent, config):
             return
         
         item = tree.item(selection[0])
+        if not item["values"] or not item["values"][0]:
+            messagebox.showwarning("Selección inválida", "Selecciona una mesa válida para analizar")
+            return
+            
         hwnd = int(item["values"][0])
         threading.Thread(target=analyze_table, args=(hwnd, config)).start()
     
-    ttk.Button(frame, text="Analizar Mesa Seleccionada", command=analyze_selected_table).pack(padx=5, pady=5)
+    ttk.Button(button_frame, text="Analizar Mesa Seleccionada", command=analyze_selected_table).pack(side="left", padx=5, pady=5)
     
     # Botón para analizar mesa bajo cursor
     def analyze_table_under_cursor():
@@ -179,7 +259,7 @@ def create_tables_frame(parent, config):
         else:
             messagebox.showwarning("Sin ventana", "No se encontró una mesa bajo el cursor")
     
-    ttk.Button(frame, text="Analizar Mesa Bajo Cursor", command=analyze_table_under_cursor).pack(padx=5, pady=5)
+    ttk.Button(button_frame, text="Analizar Mesa Bajo Cursor", command=analyze_table_under_cursor).pack(side="left", padx=5, pady=5)
     
     # Botón para limpiar caché
     def clear_cache():
@@ -187,9 +267,6 @@ def create_tables_frame(parent, config):
         clear_nick_cache()
         messagebox.showinfo("Caché limpiada", "Se ha limpiado la caché de nicks correctamente")
     
-    ttk.Button(frame, text="Limpiar Caché de Nicks", command=clear_cache).pack(padx=5, pady=5)
+    ttk.Button(button_frame, text="Limpiar Caché de Nicks", command=clear_cache).pack(side="right", padx=5, pady=5)
     
-    # Inicializar con las mesas actuales
-    refresh_tables()
-    
-    return frame
+    # Inic

@@ -85,6 +85,47 @@ def create_config_tab(parent, config):
                                 values=["ch", "en", "jp", "kr", "multilingual"], width=10)
     combo_ocr_lang.grid(row=8, column=1, sticky="w", padx=5, pady=5)
     
+    # Mostrar diálogo de copia después del análisis (NUEVO)
+    dialogo_var = tk.BooleanVar(value=config.get("mostrar_dialogo_copia", False))
+    ttk.Label(frame_general, text="Mostrar diálogo de copia:").grid(row=9, column=0, sticky="w", padx=5, pady=5)
+    check_dialogo = ttk.Checkbutton(frame_general, variable=dialogo_var)
+    check_dialogo.grid(row=9, column=1, sticky="w", padx=5, pady=5)
+    
+    # Sección de configuración de visualización
+    frame_visual = ttk.LabelFrame(frame_scroll, text="Opciones de Visualización", padding=10)
+    frame_visual.pack(fill="x", padx=10, pady=5)
+    
+    # Mostrar estadísticas/análisis
+    mostrar_stats_var = tk.BooleanVar(value=config.get("mostrar_stats", True))
+    mostrar_analisis_var = tk.BooleanVar(value=config.get("mostrar_analisis", True))
+    
+    ttk.Label(frame_visual, text="Incluir en la salida:").grid(row=0, column=0, sticky="w", padx=5, pady=5)
+    ttk.Checkbutton(frame_visual, text="Estadísticas", variable=mostrar_stats_var).grid(row=0, column=1, sticky="w", padx=5, pady=5)
+    ttk.Checkbutton(frame_visual, text="Análisis", variable=mostrar_analisis_var).grid(row=0, column=2, sticky="w", padx=5, pady=5)
+    
+    # Botón para configurar estadísticas
+    def open_stats_selector():
+        try:
+            from src.ui.dialogs.stats_selector_dialog import show_stats_selector_dialog
+            show_stats_selector_dialog(parent, config)
+        except Exception as e:
+            log_message(f"Error al abrir selector de estadísticas: {e}", level='error')
+            messagebox.showerror("Error", f"No se pudo abrir el selector de estadísticas: {e}")
+    
+    ttk.Button(frame_visual, text="Seleccionar Estadísticas", 
+              command=open_stats_selector).grid(row=1, column=0, columnspan=3, padx=5, pady=10)
+    
+    # Botón para configurar formato de visualización
+    def open_format_dialog():
+        try:
+            show_stats_format_dialog(parent, config)
+        except Exception as e:
+            log_message(f"Error al abrir diálogo de formato: {e}", level='error')
+            messagebox.showerror("Error", f"No se pudo abrir el diálogo de formato: {e}")
+    
+    ttk.Button(frame_visual, text="Configurar Formato de Visualización", 
+              command=open_format_dialog).grid(row=2, column=0, columnspan=3, padx=5, pady=5)
+    
     # Sección de coordenadas OCR
     frame_ocr = ttk.LabelFrame(frame_scroll, text="Coordenadas OCR", padding=10)
     frame_ocr.pack(fill="x", padx=10, pady=5)
@@ -192,6 +233,11 @@ def create_config_tab(parent, config):
             config["tema"] = tema_var.get()
             config["idioma_ocr"] = ocr_lang_var.get()
             
+            # Opciones de visualización
+            config["mostrar_stats"] = mostrar_stats_var.get()
+            config["mostrar_analisis"] = mostrar_analisis_var.get()
+            config["mostrar_dialogo_copia"] = dialogo_var.get()
+            
             # Actualizar coordenadas OCR
             config["ocr_coords"] = {
                 "x": int(entry_ocr_x.get()),
@@ -217,11 +263,145 @@ def create_config_tab(parent, config):
             messagebox.showerror("Error", f"Error al guardar configuración: {e}")
             log_message(f"Error al guardar configuración: {e}", level='error')
     
+    def reset_to_defaults():
+        """Restablece la configuración a los valores por defecto"""
+        if messagebox.askyesno("Restablecer", "¿Estás seguro de querer restablecer todas las configuraciones a sus valores por defecto?"):
+            from src.config.settings import reset_config
+            if reset_config():
+                messagebox.showinfo("Éxito", "Configuración restablecida correctamente. La aplicación se reiniciará.")
+                from src.ui.main_window import root
+                root.destroy()
+            else:
+                messagebox.showerror("Error", "No se pudo restablecer la configuración")
+    
     ttk.Button(frame_buttons, text="Guardar Cambios", 
               command=save_settings).pack(side="right", padx=5)
     
     ttk.Button(frame_buttons, text="Cancelar", 
               command=lambda: parent.select(0)).pack(side="right", padx=5)
     
+    ttk.Button(frame_buttons, text="Restablecer Valores por Defecto", 
+              command=reset_to_defaults).pack(side="left", padx=5)
+    
     # Devolver el frame principal (no el frame_scroll)
     return main_frame
+
+def validate_number(value):
+    """Valida que el valor sea un número entero positivo"""
+    if value.isdigit() or value == "":
+        return True
+    else:
+        return False
+
+def show_stats_format_dialog(parent, config):
+    """Muestra un diálogo para configurar el formato de visualización de las estadísticas"""
+    dialog = tk.Toplevel(parent)
+    dialog.title("Formato de Visualización de Estadísticas")
+    dialog.geometry("600x500")
+    dialog.minsize(500, 400)
+    
+    # Crear frame con scroll
+    main_frame = ttk.Frame(dialog, padding=10)
+    main_frame.pack(fill="both", expand=True)
+    
+    canvas = tk.Canvas(main_frame)
+    scrollbar = ttk.Scrollbar(main_frame, orient="vertical", command=canvas.yview)
+    scroll_frame = ttk.Frame(canvas)
+    
+    scroll_frame.bind(
+        "<Configure>",
+        lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+    )
+    
+    canvas.create_window((0, 0), window=scroll_frame, anchor="nw")
+    canvas.configure(yscrollcommand=scrollbar.set)
+    
+    canvas.pack(side="left", fill="both", expand=True)
+    scrollbar.pack(side="right", fill="y")
+    
+    # Título
+    ttk.Label(scroll_frame, text="Configura cómo se muestran las estadísticas:", 
+             font=("Arial", 12, "bold")).grid(row=0, column=0, columnspan=2, sticky="w", padx=5, pady=10)
+    
+    # Obtener formatos actuales
+    stats_format = config.get("stats_format", {})
+    
+    # Mapeo de nombres legibles
+    from src.config.settings import get_stat_display_name
+    
+    # Variables para entradas
+    entry_vars = {}
+    
+    # Crear campos para cada estadística
+    row = 1
+    for stat_key in config.get("stats_order", []):
+        # Obtener nombre legible
+        display_name = get_stat_display_name(stat_key)
+        
+        # Obtener formato actual
+        current_format = stats_format.get(stat_key, f"{stat_key.upper()}:{{value}}")
+        
+        # Crear etiqueta y campo
+        ttk.Label(scroll_frame, text=f"{display_name}:").grid(row=row, column=0, sticky="w", padx=5, pady=2)
+        
+        entry_var = tk.StringVar(value=current_format)
+        entry_vars[stat_key] = entry_var
+        
+        entry = ttk.Entry(scroll_frame, textvariable=entry_var, width=30)
+        entry.grid(row=row, column=1, sticky="w", padx=5, pady=2)
+        
+        row += 1
+    
+    # Etiqueta informativa
+    ttk.Label(scroll_frame, text="Usa {value} donde quieras que aparezca el valor",
+             font=("Arial", 9, "italic")).grid(row=row, column=0, columnspan=2, sticky="w", padx=5, pady=10)
+    
+    # Botones
+    button_frame = ttk.Frame(dialog, padding=10)
+    button_frame.pack(fill="x")
+    
+    def save_formats():
+        # Actualizar formatos
+        for stat_key, var in entry_vars.items():
+            format_str = var.get()
+            if "{value}" not in format_str:
+                format_str += "{value}"  # Asegurarse de que el formato incluye {value}
+            stats_format[stat_key] = format_str
+        
+        # Actualizar configuración
+        config["stats_format"] = stats_format
+        
+        # Guardar configuración
+        from src.config.settings import save_config
+        if save_config(config):
+            tk.messagebox.showinfo("Éxito", "Formatos guardados correctamente")
+            dialog.destroy()
+        else:
+            tk.messagebox.showerror("Error", "No se pudo guardar la configuración")
+    
+    def reset_formats():
+        # Restablecer formatos predeterminados
+        for stat_key, var in entry_vars.items():
+            var.set(f"{stat_key.upper()}:{{value}}")
+    
+    ttk.Button(button_frame, text="Guardar", command=save_formats).pack(side="right", padx=5)
+    ttk.Button(button_frame, text="Cancelar", command=dialog.destroy).pack(side="right", padx=5)
+    ttk.Button(button_frame, text="Restablecer", command=reset_formats).pack(side="left", padx=5)
+    
+    # Centrar ventana
+    dialog.update_idletasks()
+    width = dialog.winfo_width()
+    height = dialog.winfo_height()
+    x = (dialog.winfo_screenwidth() // 2) - (width // 2)
+    y = (dialog.winfo_screenheight() // 2) - (height // 2)
+    dialog.geometry(f"{width}x{height}+{x}+{y}")
+    
+    # Hacer modal
+    dialog.transient(parent)
+    dialog.grab_set()
+    
+    # Intentar añadir ícono
+    try:
+        dialog.iconbitmap("assets/icon.ico")
+    except:
+        pass

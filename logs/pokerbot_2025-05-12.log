@@ -887,3 +887,611 @@ Jugador pasivo-agresivo, tiende a pagar mucho preflop...
 2025-05-12 17:40:48 - WARNING - No se encontró una mesa bajo el cursor
 2025-05-12 17:40:49 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
 2025-05-12 17:40:49 - WARNING - No se encontró una mesa bajo el cursor
+2025-05-12 18:18:33 - INFO - Iniciando PokerBot Pro...
+2025-05-12 18:18:35 - INFO - OCR pre-inicializado correctamente con prueba de caracteres asiáticos
+2025-05-12 18:18:35 - INFO - Iniciando listener de clic derecho
+2025-05-12 18:18:35 - INFO - Hotkey alt+q registrado correctamente
+2025-05-12 18:18:35 - WARNING - No se encontraron mesas de poker activas
+2025-05-12 18:18:35 - INFO - Historial cargado: 7 entradas
+2025-05-12 18:18:35 - INFO - Actualizando treeview con 7 entradas de historial
+2025-05-12 18:18:35 - INFO - Se mostraron 7 entradas en el historial
+2025-05-12 18:18:35 - INFO - Hotkey alt+q registrada correctamente
+2025-05-12 18:18:35 - INFO - === PokerBot Pro iniciado correctamente ===
+2025-05-12 18:18:35 - INFO - Presiona alt+q o haz clic derecho para analizar nick
+2025-05-12 18:19:06 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:19:06 - WARNING - No se encontró una mesa bajo el cursor
+2025-05-12 18:19:11 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:19:11 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:19:11 - INFO - Iniciando análisis de mesa
+2025-05-12 18:19:11 - INFO - Leyendo nick...
+2025-05-12 18:19:12 - INFO - Tesseract detectó: 'ーー aa.'
+2025-05-12 18:19:12 - INFO - Nick final: 'ーー aa.'
+2025-05-12 18:19:12 - INFO - Nick detectado: 'ーー aa.'
+2025-05-12 18:19:13 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'ーー' no encontrado en la sala 'XPK'."}
+2025-05-12 18:19:19 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:19:19 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:19:19 - INFO - Iniciando análisis de mesa
+2025-05-12 18:19:19 - INFO - Leyendo nick...
+2025-05-12 18:19:19 - INFO - PaddleOCR detectó: 'VOLKkiller' (confianza: 0.96)
+2025-05-12 18:19:19 - INFO - Nick final: 'VOLKkiller'
+2025-05-12 18:19:19 - INFO - Nick detectado: 'VOLKkiller'
+2025-05-12 18:19:19 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'VOLKkiller' no encontrado en la sala 'XPK'."}
+2025-05-12 18:19:22 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:19:22 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:19:22 - INFO - Iniciando análisis de mesa
+2025-05-12 18:19:23 - INFO - Leyendo nick...
+2025-05-12 18:19:23 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:19:23 - INFO - Tesseract detectó: 'XP1648270'
+2025-05-12 18:19:23 - INFO - Nick final: 'XP1648270'
+2025-05-12 18:19:23 - INFO - Nick detectado: 'XP1648270'
+2025-05-12 18:19:26 - INFO - Stats: VPIP:15 PFR:12 3B:4 F3B:55 WTSD:17 WSD:55 CB:80/53
+2025-05-12 18:19:26 - INFO - Análisis: 🎯 Informe sobre XP1648270:
+
+1️⃣ Estilo de juego: 
+Jugador TAG con tendencia a ser pasivo postflop.
+
+...
+2025-05-12 18:19:26 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:19:26 - INFO - Historial cargado: 7 entradas
+2025-05-12 18:19:26 - INFO - Historial cargado para agregar entrada: 7 entradas existentes
+2025-05-12 18:19:26 - INFO - Historial guardado: 8 entradas
+2025-05-12 18:19:26 - INFO - Entrada añadida al historial. Nuevo total: 8 entradas
+2025-05-12 18:19:26 - INFO - Actualización de historial UI programada
+2025-05-12 18:19:26 - INFO - Análisis completado con éxito
+2025-05-12 18:19:26 - INFO - Historial cargado: 8 entradas
+2025-05-12 18:19:26 - INFO - Actualizando treeview con 8 entradas de historial
+2025-05-12 18:19:26 - INFO - Se mostraron 8 entradas en el historial
+2025-05-12 18:19:26 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:19:32 - INFO - Historial cargado: 8 entradas
+2025-05-12 18:30:11 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:11 - INFO - Leyendo nick...
+2025-05-12 18:30:11 - INFO - Tesseract detectó: 'RE'
+2025-05-12 18:30:11 - INFO - Nick final: 'RE'
+2025-05-12 18:30:12 - INFO - Nick detectado: 'RE'
+2025-05-12 18:30:22 - ERROR - Error al obtener/analizar stats: Timeout al conectar con la API. Verifica la conexión.
+2025-05-12 18:30:27 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:27 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:27 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:27 - INFO - Leyendo nick...
+2025-05-12 18:30:27 - INFO - PaddleOCR detectó: 'LoliPok' (confianza: 0.99)
+2025-05-12 18:30:27 - INFO - Nick final: 'LoliPok'
+2025-05-12 18:30:27 - INFO - Nick detectado: 'LoliPok'
+2025-05-12 18:30:27 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'LoliPok' no encontrado en la sala 'XPK'."}
+2025-05-12 18:30:30 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:30 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:30 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:30 - INFO - Leyendo nick...
+2025-05-12 18:30:31 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:30:31 - INFO - Tesseract detectó: 'VOLKkiner'
+2025-05-12 18:30:31 - INFO - Nick final: 'VOLKkiner'
+2025-05-12 18:30:31 - INFO - Nick detectado: 'VOLKkiner'
+2025-05-12 18:30:31 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'VOLKkiner' no encontrado en la sala 'XPK'."}
+2025-05-12 18:30:33 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:33 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:33 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:33 - INFO - Leyendo nick...
+2025-05-12 18:30:34 - INFO - PaddleOCR detectó: 'Z2222222' (confianza: 0.73)
+2025-05-12 18:30:34 - INFO - Nick final: 'Z2222222'
+2025-05-12 18:30:34 - INFO - Nick detectado: 'Z2222222'
+2025-05-12 18:30:34 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'Z2222222' no encontrado en la sala 'XPK'."}
+2025-05-12 18:30:42 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:42 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:42 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:42 - INFO - Leyendo nick...
+2025-05-12 18:30:42 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:30:43 - INFO - Tesseract detectó: 'Zzzzzzzz'
+2025-05-12 18:30:43 - INFO - Nick final: 'Zzzzzzzz'
+2025-05-12 18:30:43 - INFO - Nick detectado: 'Zzzzzzzz'
+2025-05-12 18:30:44 - INFO - Stats: VPIP:23 PFR:17 3B:14 F3B:0 WTSD:20 WSD:33 CB:71/100
+2025-05-12 18:30:44 - INFO - Análisis: 🎯 Informe sobre Zzzzzzzz:
+
+1️⃣ Estilo de juego: 
+Pasivo preflop, agresivo postflop con tendencia a p...
+2025-05-12 18:30:45 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:30:45 - INFO - Historial cargado: 8 entradas
+2025-05-12 18:30:45 - INFO - Historial cargado para agregar entrada: 8 entradas existentes
+2025-05-12 18:30:45 - INFO - Historial guardado: 9 entradas
+2025-05-12 18:30:45 - INFO - Entrada añadida al historial. Nuevo total: 9 entradas
+2025-05-12 18:30:45 - INFO - Actualización de historial UI programada
+2025-05-12 18:30:45 - INFO - Análisis completado con éxito
+2025-05-12 18:30:45 - INFO - Historial cargado: 9 entradas
+2025-05-12 18:30:45 - INFO - Actualizando treeview con 9 entradas de historial
+2025-05-12 18:30:45 - INFO - Se mostraron 9 entradas en el historial
+2025-05-12 18:30:45 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:30:51 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:51 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:51 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:51 - INFO - Nick recuperado de caché: 'Zzzzzzzz'
+2025-05-12 18:30:52 - INFO - Stats: VPIP:23 PFR:17 3B:14 F3B:0 WTSD:20 WSD:33 CB:71/100
+2025-05-12 18:30:52 - INFO - Análisis: 🎯 Informe sobre Zzzzzzzz:
+
+1️⃣ Estilo de juego: 
+Jugador pasivo preflop, agresivo en el flop y el ri...
+2025-05-12 18:30:53 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:30:53 - INFO - Historial cargado: 9 entradas
+2025-05-12 18:30:53 - INFO - Historial cargado para agregar entrada: 9 entradas existentes
+2025-05-12 18:30:53 - INFO - Historial guardado: 10 entradas
+2025-05-12 18:30:53 - INFO - Entrada añadida al historial. Nuevo total: 10 entradas
+2025-05-12 18:30:53 - INFO - Actualización de historial UI programada
+2025-05-12 18:30:53 - INFO - Análisis completado con éxito
+2025-05-12 18:30:53 - INFO - Historial cargado: 10 entradas
+2025-05-12 18:30:53 - INFO - Actualizando treeview con 10 entradas de historial
+2025-05-12 18:30:53 - INFO - Se mostraron 10 entradas en el historial
+2025-05-12 18:30:53 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:30:55 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:55 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:55 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:55 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:30:55 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:30:55 - INFO - Leyendo nick...
+2025-05-12 18:30:55 - INFO - PaddleOCR detectó: 'Disasters' (confianza: 1.00)
+2025-05-12 18:30:55 - INFO - Nick final: 'Disasters'
+2025-05-12 18:30:55 - INFO - Nick detectado: 'Disasters'
+2025-05-12 18:30:57 - INFO - Stats: VPIP:43 PFR:23 3B:8 F3B:15 WTSD:28 WSD:26 CB:64/46
+2025-05-12 18:30:57 - INFO - Análisis: 🎯 Informe sobre Disasters:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop a medias.
+
+2️⃣ Er...
+2025-05-12 18:30:57 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:30:57 - INFO - Historial cargado: 10 entradas
+2025-05-12 18:30:57 - INFO - Historial cargado para agregar entrada: 10 entradas existentes
+2025-05-12 18:30:57 - INFO - Historial guardado: 11 entradas
+2025-05-12 18:30:57 - INFO - Entrada añadida al historial. Nuevo total: 11 entradas
+2025-05-12 18:30:57 - INFO - Actualización de historial UI programada
+2025-05-12 18:30:57 - INFO - Análisis completado con éxito
+2025-05-12 18:30:58 - INFO - Historial cargado: 11 entradas
+2025-05-12 18:30:58 - INFO - Actualizando treeview con 11 entradas de historial
+2025-05-12 18:30:58 - INFO - Se mostraron 11 entradas en el historial
+2025-05-12 18:30:58 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:30:59 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:30:59 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:30:59 - INFO - Iniciando análisis de mesa
+2025-05-12 18:30:59 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:30:59 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:30:59 - INFO - Leyendo nick...
+2025-05-12 18:30:59 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:31:00 - INFO - Tesseract detectó: 'tiburoncin'
+2025-05-12 18:31:00 - INFO - Nick final: 'tiburoncin'
+2025-05-12 18:31:00 - INFO - Nick detectado: 'tiburoncin'
+2025-05-12 18:31:00 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'tiburoncin' no encontrado en la sala 'XPK'."}
+2025-05-12 18:31:12 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:12 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:31:12 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:12 - INFO - Leyendo nick...
+2025-05-12 18:31:12 - INFO - PaddleOCR detectó: 'V' (confianza: 0.78)
+2025-05-12 18:31:12 - INFO - Nick final: 'V'
+2025-05-12 18:31:12 - INFO - Nick detectado: 'V'
+2025-05-12 18:31:21 - INFO - Stats: VPIP:35 PFR:20 3B:8 F3B:50 WTSD:31 WSD:50 CB:60/42
+2025-05-12 18:31:21 - INFO - Análisis: ---
+
+🎯 Informe sobre V:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop. Se frena en turn.
+
+...
+2025-05-12 18:31:22 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:31:22 - INFO - Historial cargado: 11 entradas
+2025-05-12 18:31:22 - INFO - Historial cargado para agregar entrada: 11 entradas existentes
+2025-05-12 18:31:22 - INFO - Historial guardado: 12 entradas
+2025-05-12 18:31:22 - INFO - Entrada añadida al historial. Nuevo total: 12 entradas
+2025-05-12 18:31:22 - INFO - Actualización de historial UI programada
+2025-05-12 18:31:22 - INFO - Análisis completado con éxito
+2025-05-12 18:31:22 - INFO - Historial cargado: 12 entradas
+2025-05-12 18:31:22 - INFO - Actualizando treeview con 12 entradas de historial
+2025-05-12 18:31:22 - INFO - Se mostraron 12 entradas en el historial
+2025-05-12 18:31:22 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:31:27 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:27 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:31:27 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:27 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:31:27 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:31:27 - INFO - Leyendo nick...
+2025-05-12 18:31:27 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:31:28 - INFO - Tesseract detectó: '8020--'
+2025-05-12 18:31:28 - INFO - Nick final: '8020--'
+2025-05-12 18:31:28 - INFO - Nick detectado: '8020--'
+2025-05-12 18:31:28 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador '8020--' no encontrado en la sala 'XPK'."}
+2025-05-12 18:31:32 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:32 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:31:32 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:32 - INFO - Leyendo nick...
+2025-05-12 18:31:32 - INFO - PaddleOCR detectó: 'BOZO--' (confianza: 0.91)
+2025-05-12 18:31:32 - INFO - Nick final: 'BOZO--'
+2025-05-12 18:31:32 - INFO - Nick detectado: 'BOZO--'
+2025-05-12 18:31:32 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'BOZO--' no encontrado en la sala 'XPK'."}
+2025-05-12 18:31:37 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:37 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:31:37 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:37 - INFO - Leyendo nick...
+2025-05-12 18:31:37 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:31:37 - INFO - Tesseract detectó: 'XP3386829'
+2025-05-12 18:31:37 - INFO - Nick final: 'XP3386829'
+2025-05-12 18:31:38 - INFO - Nick detectado: 'XP3386829'
+2025-05-12 18:31:38 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'XP3386829' no encontrado en la sala 'XPK'."}
+2025-05-12 18:31:41 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:41 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:31:41 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:41 - INFO - Leyendo nick...
+2025-05-12 18:31:41 - INFO - PaddleOCR detectó: 'VOLKkiller' (confianza: 0.96)
+2025-05-12 18:31:41 - INFO - Nick final: 'VOLKkiller'
+2025-05-12 18:31:41 - INFO - Nick detectado: 'VOLKkiller'
+2025-05-12 18:31:41 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'VOLKkiller' no encontrado en la sala 'XPK'."}
+2025-05-12 18:31:44 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:44 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:31:44 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:44 - INFO - Leyendo nick...
+2025-05-12 18:31:44 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:31:45 - INFO - Tesseract detectó: 'checkallin53'
+2025-05-12 18:31:45 - INFO - Nick final: 'checkallin53'
+2025-05-12 18:31:45 - INFO - Nick detectado: 'checkallin53'
+2025-05-12 18:31:48 - INFO - Stats: VPIP:14 PFR:13 3B:5 F3B:66 WTSD:22 WSD:25 CB:71/33
+2025-05-12 18:31:48 - INFO - Análisis: 🎯 Informe sobre checkallin53:
+
+1️⃣ Estilo de juego: 
+Jugador pasivo con cierta agresión en el flop, ...
+2025-05-12 18:31:48 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:31:48 - INFO - Historial cargado: 12 entradas
+2025-05-12 18:31:48 - INFO - Historial cargado para agregar entrada: 12 entradas existentes
+2025-05-12 18:31:48 - INFO - Historial guardado: 13 entradas
+2025-05-12 18:31:48 - INFO - Entrada añadida al historial. Nuevo total: 13 entradas
+2025-05-12 18:31:48 - INFO - Actualización de historial UI programada
+2025-05-12 18:31:48 - INFO - Análisis completado con éxito
+2025-05-12 18:31:48 - INFO - Historial cargado: 13 entradas
+2025-05-12 18:31:48 - INFO - Actualizando treeview con 13 entradas de historial
+2025-05-12 18:31:48 - INFO - Se mostraron 13 entradas en el historial
+2025-05-12 18:31:48 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:31:56 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:56 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:31:56 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:56 - INFO - Leyendo nick...
+2025-05-12 18:31:57 - INFO - Tesseract detectó: '2'
+2025-05-12 18:31:57 - INFO - Nick final: '2'
+2025-05-12 18:31:57 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:31:57 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:31:57 - INFO - Iniciando análisis de mesa
+2025-05-12 18:31:57 - INFO - Nick detectado: '2'
+2025-05-12 18:31:57 - INFO - Nick recuperado de caché: '2'
+2025-05-12 18:32:04 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:32:04 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:32:04 - INFO - Iniciando análisis de mesa
+2025-05-12 18:32:04 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:32:04 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:32:04 - INFO - Leyendo nick...
+2025-05-12 18:32:05 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:32:05 - INFO - Tesseract detectó: 'charo8126'
+2025-05-12 18:32:05 - INFO - Nick final: 'charo8126'
+2025-05-12 18:32:05 - INFO - Nick detectado: 'charo8126'
+2025-05-12 18:32:05 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'charo8126' no encontrado en la sala 'XPK'."}
+2025-05-12 18:32:07 - INFO - Stats: VPIP:27 PFR:14 3B:6 F3B:45 WTSD:24 WSD:50 CB:62/56
+2025-05-12 18:32:07 - INFO - Análisis: 🎯 Informe sobre jugador X:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop.
+
+2️⃣ Errores exp...
+2025-05-12 18:32:08 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:32:08 - INFO - Historial cargado: 13 entradas
+2025-05-12 18:32:08 - INFO - Historial cargado para agregar entrada: 13 entradas existentes
+2025-05-12 18:32:08 - INFO - Historial guardado: 14 entradas
+2025-05-12 18:32:08 - INFO - Entrada añadida al historial. Nuevo total: 14 entradas
+2025-05-12 18:32:08 - INFO - Actualización de historial UI programada
+2025-05-12 18:32:08 - INFO - Análisis completado con éxito
+2025-05-12 18:32:08 - INFO - Historial cargado: 14 entradas
+2025-05-12 18:32:08 - INFO - Actualizando treeview con 14 entradas de historial
+2025-05-12 18:32:08 - INFO - Se mostraron 14 entradas en el historial
+2025-05-12 18:32:08 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:32:08 - INFO - Stats: VPIP:27 PFR:14 3B:6 F3B:45 WTSD:24 WSD:50 CB:62/56
+2025-05-12 18:32:08 - INFO - Análisis: 🎯 Informe sobre "2":
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop. Muestra falta de equil...
+2025-05-12 18:32:09 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:32:09 - INFO - Historial cargado: 14 entradas
+2025-05-12 18:32:09 - INFO - Historial cargado para agregar entrada: 14 entradas existentes
+2025-05-12 18:32:09 - INFO - Historial guardado: 15 entradas
+2025-05-12 18:32:09 - INFO - Entrada añadida al historial. Nuevo total: 15 entradas
+2025-05-12 18:32:09 - INFO - Actualización de historial UI programada
+2025-05-12 18:32:09 - INFO - Análisis completado con éxito
+2025-05-12 18:32:09 - INFO - Historial cargado: 15 entradas
+2025-05-12 18:32:09 - INFO - Actualizando treeview con 15 entradas de historial
+2025-05-12 18:32:09 - INFO - Se mostraron 15 entradas en el historial
+2025-05-12 18:32:09 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:32:16 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:32:16 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:32:16 - INFO - Iniciando análisis de mesa
+2025-05-12 18:32:17 - INFO - Leyendo nick...
+2025-05-12 18:32:17 - INFO - Tesseract detectó: 'マクドナルド'
+2025-05-12 18:32:17 - INFO - Nick final: 'マクドナルド'
+2025-05-12 18:32:18 - INFO - Nick detectado: 'マクドナルド'
+2025-05-12 18:32:18 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'マクドナルド' no encontrado en la sala 'XPK'."}
+2025-05-12 18:32:24 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:32:24 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:32:24 - INFO - Iniciando análisis de mesa
+2025-05-12 18:32:24 - INFO - Leyendo nick...
+2025-05-12 18:32:24 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:32:25 - INFO - Tesseract detectó: '‘Sai Suthida'
+2025-05-12 18:32:25 - INFO - Nick final: '‘Sai Suthida'
+2025-05-12 18:32:25 - INFO - Nick detectado: '‘Sai Suthida'
+2025-05-12 18:32:25 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador '‘Sai' no encontrado en la sala 'XPK'."}
+2025-05-12 18:33:26 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:33:26 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:33:26 - INFO - Iniciando análisis de mesa
+2025-05-12 18:33:27 - INFO - Leyendo nick...
+2025-05-12 18:33:27 - INFO - PaddleOCR detectó: 'Sai Suthida' (confianza: 0.98)
+2025-05-12 18:33:27 - INFO - Nick final: 'Sai Suthida'
+2025-05-12 18:33:27 - INFO - Nick detectado: 'Sai Suthida'
+2025-05-12 18:33:29 - INFO - Stats: VPIP:47 PFR:14 3B:4 F3B:30 WTSD:30 WSD:42 CB:60/46
+2025-05-12 18:33:29 - INFO - Análisis: 🎯 Informe sobre Sai Suthida:
+
+1️⃣ Estilo de juego: 
+Jugador muy pasivo con VPIP alto y PFR bajo, tie...
+2025-05-12 18:33:29 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:33:29 - INFO - Historial cargado: 15 entradas
+2025-05-12 18:33:29 - INFO - Historial cargado para agregar entrada: 15 entradas existentes
+2025-05-12 18:33:29 - INFO - Historial guardado: 16 entradas
+2025-05-12 18:33:29 - INFO - Entrada añadida al historial. Nuevo total: 16 entradas
+2025-05-12 18:33:29 - INFO - Actualización de historial UI programada
+2025-05-12 18:33:29 - INFO - Análisis completado con éxito
+2025-05-12 18:33:29 - INFO - Historial cargado: 16 entradas
+2025-05-12 18:33:29 - INFO - Actualizando treeview con 16 entradas de historial
+2025-05-12 18:33:29 - INFO - Se mostraron 16 entradas en el historial
+2025-05-12 18:33:29 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:33:35 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:33:35 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:33:35 - INFO - Iniciando análisis de mesa
+2025-05-12 18:33:35 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:33:35 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:33:36 - INFO - Leyendo nick...
+2025-05-12 18:33:36 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:33:36 - INFO - Tesseract detectó: 'charo8126'
+2025-05-12 18:33:36 - INFO - Nick final: 'charo8126'
+2025-05-12 18:33:36 - INFO - Nick detectado: 'charo8126'
+2025-05-12 18:33:36 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'charo8126' no encontrado en la sala 'XPK'."}
+2025-05-12 18:37:21 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:37:21 - WARNING - No se encontró una mesa bajo el cursor
+2025-05-12 18:45:32 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:45:32 - WARNING - No se encontró una mesa bajo el cursor
+2025-05-12 18:47:44 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:47:44 - WARNING - No se encontró una mesa bajo el cursor
+2025-05-12 18:56:43 - INFO - Iniciando PokerBot Pro...
+2025-05-12 18:56:45 - INFO - OCR pre-inicializado correctamente con prueba de caracteres asiáticos
+2025-05-12 18:56:45 - INFO - Iniciando listener de clic derecho
+2025-05-12 18:56:45 - INFO - Hotkey alt+q registrado correctamente
+2025-05-12 18:56:45 - INFO - Historial cargado: 16 entradas
+2025-05-12 18:56:45 - INFO - Actualizando treeview con 16 entradas de historial
+2025-05-12 18:56:45 - INFO - Se mostraron 16 entradas en el historial
+2025-05-12 18:56:45 - INFO - Hotkey alt+q registrada correctamente
+2025-05-12 18:56:45 - INFO - === PokerBot Pro iniciado correctamente ===
+2025-05-12 18:56:45 - INFO - Presiona alt+q o haz clic derecho para analizar nick
+2025-05-12 18:57:12 - INFO - Historial cargado: 16 entradas
+2025-05-12 18:57:12 - INFO - Últimas estadísticas copiadas al portapapeles
+2025-05-12 18:57:24 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:57:24 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:57:24 - INFO - Iniciando análisis de mesa
+2025-05-12 18:57:24 - INFO - Leyendo nick...
+2025-05-12 18:57:24 - INFO - PaddleOCR detectó: 'Sai Suthida' (confianza: 0.98)
+2025-05-12 18:57:24 - INFO - Nick final: 'Sai Suthida'
+2025-05-12 18:57:24 - INFO - Nick detectado: 'Sai Suthida'
+2025-05-12 18:57:27 - INFO - Stats: VPIP:47 PFR:14 3B:4 F3B:30 WTSD:30 WSD:42 CF:60 CT:46 FFC:37
+2025-05-12 18:57:27 - INFO - Análisis: 🎯 Informe sobre Sai Suthida:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop.
+
+2️⃣ Errores e...
+2025-05-12 18:57:27 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:57:27 - INFO - Historial cargado: 16 entradas
+2025-05-12 18:57:27 - INFO - Historial cargado para agregar entrada: 16 entradas existentes
+2025-05-12 18:57:27 - INFO - Historial guardado: 17 entradas
+2025-05-12 18:57:27 - INFO - Entrada añadida al historial. Nuevo total: 17 entradas
+2025-05-12 18:57:27 - INFO - Actualización de historial UI programada
+2025-05-12 18:57:27 - INFO - Análisis completado con éxito
+2025-05-12 18:57:27 - INFO - Historial cargado: 17 entradas
+2025-05-12 18:57:27 - INFO - Actualizando treeview con 17 entradas de historial
+2025-05-12 18:57:27 - INFO - Se mostraron 17 entradas en el historial
+2025-05-12 18:57:27 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:57:41 - INFO - Historial cargado: 17 entradas
+2025-05-12 18:57:41 - INFO - Último análisis copiado al portapapeles
+2025-05-12 18:57:47 - INFO - Historial cargado: 17 entradas
+2025-05-12 18:57:47 - INFO - Últimas estadísticas copiadas al portapapeles
+2025-05-12 18:57:58 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:57:58 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:57:58 - INFO - Iniciando análisis de mesa
+2025-05-12 18:57:58 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:57:58 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:57:58 - INFO - Leyendo nick...
+2025-05-12 18:57:58 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:57:59 - INFO - Tesseract detectó: 'yXP3092763'
+2025-05-12 18:57:59 - INFO - Nick final: 'yXP3092763'
+2025-05-12 18:57:59 - INFO - Nick detectado: 'yXP3092763'
+2025-05-12 18:57:59 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'yXP3092763' no encontrado en la sala 'XPK'."}
+2025-05-12 18:58:03 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:58:03 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:58:03 - INFO - Iniciando análisis de mesa
+2025-05-12 18:58:03 - INFO - Leyendo nick...
+2025-05-12 18:58:04 - INFO - PaddleOCR detectó: 'XP3092763' (confianza: 1.00)
+2025-05-12 18:58:04 - INFO - Nick final: 'XP3092763'
+2025-05-12 18:58:04 - INFO - Nick detectado: 'XP3092763'
+2025-05-12 18:58:04 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'XP3092763' no encontrado en la sala 'XPK'."}
+2025-05-12 18:58:08 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:58:08 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:58:08 - INFO - Iniciando análisis de mesa
+2025-05-12 18:58:09 - INFO - Leyendo nick...
+2025-05-12 18:58:09 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:58:09 - INFO - Tesseract detectó: 'checkallin53'
+2025-05-12 18:58:09 - INFO - Nick final: 'checkallin53'
+2025-05-12 18:58:09 - INFO - Nick detectado: 'checkallin53'
+2025-05-12 18:58:11 - INFO - Stats: VPIP:14 PFR:13 3B:5 F3B:66 WTSD:22 WSD:25 CF:71 CT:33 FFC:100
+2025-05-12 18:58:11 - INFO - Análisis: 🎯 Informe sobre checkallin53:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop selectivo.
+
+2️...
+2025-05-12 18:58:12 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:58:12 - INFO - Historial cargado: 17 entradas
+2025-05-12 18:58:12 - INFO - Historial cargado para agregar entrada: 17 entradas existentes
+2025-05-12 18:58:12 - INFO - Historial guardado: 18 entradas
+2025-05-12 18:58:12 - INFO - Entrada añadida al historial. Nuevo total: 18 entradas
+2025-05-12 18:58:12 - INFO - Actualización de historial UI programada
+2025-05-12 18:58:12 - INFO - Análisis completado con éxito
+2025-05-12 18:58:12 - INFO - Historial cargado: 18 entradas
+2025-05-12 18:58:12 - INFO - Actualizando treeview con 18 entradas de historial
+2025-05-12 18:58:12 - INFO - Se mostraron 18 entradas en el historial
+2025-05-12 18:58:12 - INFO - Historial UI actualizado correctamente
+2025-05-12 18:58:18 - INFO - Historial cargado: 18 entradas
+2025-05-12 18:58:18 - INFO - Último análisis copiado al portapapeles
+2025-05-12 18:58:26 - INFO - Historial cargado: 18 entradas
+2025-05-12 18:58:26 - INFO - Últimas estadísticas copiadas al portapapeles
+2025-05-12 18:58:57 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:58:57 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:58:57 - INFO - Iniciando análisis de mesa
+2025-05-12 18:58:57 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 18:58:57 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 18:58:57 - INFO - Leyendo nick...
+2025-05-12 18:58:57 - INFO - PaddleOCR detectó: 'melquiades003' (confianza: 0.97)
+2025-05-12 18:58:57 - INFO - Nick final: 'melquiades003'
+2025-05-12 18:58:57 - INFO - Nick detectado: 'melquiades003'
+2025-05-12 18:58:58 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'melquiades003' no encontrado en la sala 'XPK'."}
+2025-05-12 18:59:03 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:59:03 - INFO - Mesa encontrada: 12-May#1/2 🎣🐟🐠🔥🇲🇾①
+2025-05-12 18:59:03 - INFO - Iniciando análisis de mesa
+2025-05-12 18:59:03 - INFO - Leyendo nick...
+2025-05-12 18:59:03 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:59:04 - INFO - Tesseract detectó: 'XP3092763'
+2025-05-12 18:59:04 - INFO - Nick final: 'XP3092763'
+2025-05-12 18:59:04 - INFO - Nick detectado: 'XP3092763'
+2025-05-12 18:59:04 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'XP3092763' no encontrado en la sala 'XPK'."}
+2025-05-12 18:59:16 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:59:16 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:59:16 - INFO - Iniciando análisis de mesa
+2025-05-12 18:59:16 - INFO - Leyendo nick...
+2025-05-12 18:59:16 - INFO - PaddleOCR detectó: 'XP3386829' (confianza: 1.00)
+2025-05-12 18:59:16 - INFO - Nick final: 'XP3386829'
+2025-05-12 18:59:16 - INFO - Nick detectado: 'XP3386829'
+2025-05-12 18:59:17 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'XP3386829' no encontrado en la sala 'XPK'."}
+2025-05-12 18:59:22 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 18:59:22 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 18:59:22 - INFO - Iniciando análisis de mesa
+2025-05-12 18:59:22 - INFO - Leyendo nick...
+2025-05-12 18:59:22 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 18:59:22 - INFO - Tesseract detectó: 'Disasters'
+2025-05-12 18:59:22 - INFO - Nick final: 'Disasters'
+2025-05-12 18:59:23 - INFO - Nick detectado: 'Disasters'
+2025-05-12 18:59:24 - INFO - Stats: VPIP:43 PFR:23 3B:8 F3B:15 WTSD:28 WSD:26 CF:64 CT:46 FFC:43
+2025-05-12 18:59:24 - INFO - Análisis: 🎯 Informe sobre Disasters:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop pero inconsistent...
+2025-05-12 18:59:25 - INFO - Texto pegado en ventana de poker
+2025-05-12 18:59:25 - INFO - Historial cargado: 18 entradas
+2025-05-12 18:59:25 - INFO - Historial cargado para agregar entrada: 18 entradas existentes
+2025-05-12 18:59:25 - INFO - Historial guardado: 19 entradas
+2025-05-12 18:59:25 - INFO - Entrada añadida al historial. Nuevo total: 19 entradas
+2025-05-12 18:59:25 - INFO - Actualización de historial UI programada
+2025-05-12 18:59:25 - INFO - Análisis completado con éxito
+2025-05-12 18:59:25 - INFO - Historial cargado: 19 entradas
+2025-05-12 18:59:25 - INFO - Actualizando treeview con 19 entradas de historial
+2025-05-12 18:59:25 - INFO - Se mostraron 19 entradas en el historial
+2025-05-12 18:59:25 - INFO - Historial UI actualizado correctamente
+2025-05-12 19:02:00 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 19:02:00 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 19:02:00 - INFO - Iniciando análisis de mesa
+2025-05-12 19:02:00 - INFO - Detectado cambio de jugador en la misma ventana
+2025-05-12 19:02:00 - INFO - La ventana cambió, obteniendo nuevo nick...
+2025-05-12 19:02:00 - INFO - Leyendo nick...
+2025-05-12 19:02:01 - INFO - PaddleOCR detectó: 'Disasters' (confianza: 1.00)
+2025-05-12 19:02:01 - INFO - Nick final: 'Disasters'
+2025-05-12 19:02:01 - INFO - Nick detectado: 'Disasters'
+2025-05-12 19:02:02 - INFO - Stats: VPIP:43 PFR:23 3BET:8 F3BET:15 WTSD:28 WSD:26 CBET_FLOP:64 CBET_TURN:46 FOLD_TO_FLOP_CBET_PCT:43
+2025-05-12 19:02:02 - INFO - Análisis: 🎯 Informe sobre Disasters:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo postflop.
+
+2️⃣ Errores exp...
+2025-05-12 19:02:03 - INFO - Texto pegado en ventana de poker
+2025-05-12 19:02:03 - INFO - Historial cargado: 19 entradas
+2025-05-12 19:02:03 - INFO - Historial cargado para agregar entrada: 19 entradas existentes
+2025-05-12 19:02:03 - INFO - Historial guardado: 20 entradas
+2025-05-12 19:02:03 - INFO - Entrada añadida al historial. Nuevo total: 20 entradas
+2025-05-12 19:02:03 - INFO - Actualización de historial UI programada
+2025-05-12 19:02:03 - INFO - Análisis completado con éxito
+2025-05-12 19:02:03 - INFO - Historial cargado: 20 entradas
+2025-05-12 19:02:03 - INFO - Actualizando treeview con 20 entradas de historial
+2025-05-12 19:02:03 - INFO - Se mostraron 20 entradas en el historial
+2025-05-12 19:02:03 - INFO - Historial UI actualizado correctamente
+2025-05-12 19:02:17 - INFO - === PokerBot Pro iniciado correctamente ===
+2025-05-12 19:02:17 - INFO - Presiona alt+q o haz clic derecho para analizar nick
+2025-05-12 19:02:17 - INFO - Cerrando aplicación...
+2025-05-12 19:02:17 - INFO - Deteniendo listener de clic derecho
+2025-05-12 19:02:17 - INFO - Aplicación cerrada correctamente
+2025-05-12 19:02:30 - INFO - Iniciando PokerBot Pro...
+2025-05-12 19:02:32 - INFO - OCR pre-inicializado correctamente con prueba de caracteres asiáticos
+2025-05-12 19:02:32 - INFO - Iniciando listener de clic derecho
+2025-05-12 19:02:32 - INFO - Hotkey alt+q registrado correctamente
+2025-05-12 19:02:32 - INFO - Historial cargado: 20 entradas
+2025-05-12 19:02:32 - INFO - Actualizando treeview con 20 entradas de historial
+2025-05-12 19:02:32 - INFO - Se mostraron 20 entradas en el historial
+2025-05-12 19:02:32 - INFO - Hotkey alt+q registrada correctamente
+2025-05-12 19:02:32 - INFO - === PokerBot Pro iniciado correctamente ===
+2025-05-12 19:02:32 - INFO - Presiona alt+q o haz clic derecho para analizar nick
+2025-05-12 19:02:41 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 19:02:41 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 19:02:41 - INFO - Iniciando análisis de mesa
+2025-05-12 19:02:41 - INFO - Leyendo nick...
+2025-05-12 19:02:41 - INFO - PaddleOCR detectó: 'Disasters' (confianza: 1.00)
+2025-05-12 19:02:41 - INFO - Nick final: 'Disasters'
+2025-05-12 19:02:41 - INFO - Nick detectado: 'Disasters'
+2025-05-12 19:02:43 - INFO - Stats: VPIP:43 PFR:23 3BET:8 F3BET:15 WTSD:28 WSD:26 CBET_FLOP:64 CBET_TURN:46 FOLD_TO_FLOP_CBET_PCT:43
+2025-05-12 19:02:43 - INFO - Análisis: 🎯 Informe sobre Disasters:
+
+1️⃣ Estilo de juego: Pasivo preflop, agresivo en flop, se frena en turn....
+2025-05-12 19:02:43 - INFO - Texto pegado en ventana de poker
+2025-05-12 19:02:43 - INFO - Historial cargado: 20 entradas
+2025-05-12 19:02:43 - INFO - Historial cargado para agregar entrada: 20 entradas existentes
+2025-05-12 19:02:43 - INFO - Historial guardado: 21 entradas
+2025-05-12 19:02:43 - INFO - Entrada añadida al historial. Nuevo total: 21 entradas
+2025-05-12 19:02:43 - INFO - Actualización de historial UI programada
+2025-05-12 19:02:43 - INFO - Análisis completado con éxito
+2025-05-12 19:02:43 - INFO - Historial cargado: 21 entradas
+2025-05-12 19:02:43 - INFO - Actualizando treeview con 21 entradas de historial
+2025-05-12 19:02:43 - INFO - Se mostraron 21 entradas en el historial
+2025-05-12 19:02:43 - INFO - Historial UI actualizado correctamente
+2025-05-12 19:45:30 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 19:45:30 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 19:45:30 - INFO - Iniciando análisis de mesa
+2025-05-12 19:45:30 - INFO - Leyendo nick...
+2025-05-12 19:45:31 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 19:45:31 - INFO - Tesseract detectó: 'XP3211564'
+2025-05-12 19:45:31 - INFO - Nick final: 'XP3211564'
+2025-05-12 19:45:32 - INFO - Nick detectado: 'XP3211564'
+2025-05-12 19:45:32 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador 'XP3211564' no encontrado en la sala 'XPK'."}
+2025-05-12 19:45:35 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 19:45:35 - INFO - Mesa encontrada: 0.5/1 🍀🇲🇾①
+2025-05-12 19:45:35 - INFO - Iniciando análisis de mesa
+2025-05-12 19:45:35 - INFO - Leyendo nick...
+2025-05-12 19:45:36 - INFO - PaddleOCR detectó: '狐狸取' (confianza: 1.00)
+2025-05-12 19:45:36 - INFO - Nick final: '狐狸取'
+2025-05-12 19:45:36 - INFO - Nick detectado: '狐狸取'
+2025-05-12 19:45:36 - ERROR - Error al obtener/analizar stats: Error al obtener stats: Código 404, {"message":"Jugador '狐狸取' no encontrado en la sala 'XPK'."}
+2025-05-12 19:46:26 - INFO - Iniciando análisis de mesa
+2025-05-12 19:46:26 - INFO - Leyendo nick...
+2025-05-12 19:46:26 - ERROR - Error en PaddleOCR: could not execute a primitive
+2025-05-12 19:46:27 - INFO - Tesseract detectó: 'RE'
+2025-05-12 19:46:27 - INFO - Nick final: 'RE'
+2025-05-12 19:46:27 - INFO - Nick detectado: 'RE'
+2025-05-12 19:46:31 - INFO - Stats: VPIP:20 PFR:8 3BET:3 F3BET:59 WTSD:28 WSD:56 CBET_FLOP:56 CBET_TURN:40 FOLD_TO_FLOP_CBET_PCT:43
+2025-05-12 19:46:31 - INFO - Análisis: 🎯 Informe sobre RE:
+
+1️⃣ Estilo de juego: Pasivo preflop con agresión inconsistente postflop.
+
+2️⃣ E...
+2025-05-12 19:46:31 - INFO - Texto pegado en ventana de poker
+2025-05-12 19:46:31 - INFO - Historial cargado: 21 entradas
+2025-05-12 19:46:31 - INFO - Historial cargado para agregar entrada: 21 entradas existentes
+2025-05-12 19:46:31 - INFO - Historial guardado: 22 entradas
+2025-05-12 19:46:31 - INFO - Entrada añadida al historial. Nuevo total: 22 entradas
+2025-05-12 19:46:31 - INFO - Actualización de historial UI programada
+2025-05-12 19:46:31 - INFO - Análisis completado con éxito
+2025-05-12 19:46:31 - INFO - Historial cargado: 22 entradas
+2025-05-12 19:46:31 - INFO - Actualizando treeview con 22 entradas de historial
+2025-05-12 19:46:31 - INFO - Se mostraron 22 entradas en el historial
+2025-05-12 19:46:31 - INFO - Historial UI actualizado correctamente
+2025-05-12 19:46:36 - INFO - Clic derecho detectado, buscando mesa bajo el cursor
+2025-05-12 19:46:36 - WARNING - No se encontró una mesa bajo el cursor
